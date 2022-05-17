@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/lastNameEdit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/edittext_background"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/lastNameDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/last_name"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2"
+        android:textColor="@color/grey"
+        app:layout_constraintTop_toBottomOf="@+id/lastNameEdit" />
+
+    <EditText
+        android:id="@+id/firstNameEdit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/edittext_background"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toBottomOf="@id/lastNameDescription"/>
+
+    <TextView
+        android:id="@+id/firstNameDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/first_name"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2"
+        android:textColor="@color/grey"
+        app:layout_constraintTop_toBottomOf="@+id/firstNameEdit" />
+
+    <EditText
+        android:id="@+id/patronymicEdit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/edittext_background"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toBottomOf="@id/firstNameDescription"/>
+
+    <TextView
+        android:id="@+id/patronymicDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/patronymic"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2"
+        android:textColor="@color/grey"
+        app:layout_constraintTop_toBottomOf="@+id/patronymicEdit" />
+
+    <EditText
+        android:id="@+id/emailEdit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/edittext_background"
+        android:inputType="textEmailAddress"
+        android:hint="@string/email_hint"
+        app:layout_constraintTop_toBottomOf="@id/patronymicDescription"
+        android:autofillHints="emailAddress" />
+
+    <TextView
+        android:id="@+id/emailDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/email"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2"
+        android:textColor="@color/grey"
+        app:layout_constraintTop_toBottomOf="@+id/emailEdit"/>
+
+    <EditText
+        android:id="@+id/phoneEdit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/edittext_background"
+        android:inputType="phone"
+        android:hint="@string/phone_hint"
+        app:layout_constraintTop_toBottomOf="@id/emailDescription"
+        android:autofillHints="emailAddress" />
+
+    <TextView
+        android:id="@+id/phoneDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/phone"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2"
+        android:textColor="@color/grey"
+        app:layout_constraintTop_toBottomOf="@+id/phoneEdit"/>
+
+    <EditText
+        android:id="@+id/socialLinkEdit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/edittext_background"
+        android:inputType="textWebEditText"
+        android:hint="@string/social_hint_link"
+        app:layout_constraintTop_toBottomOf="@id/phoneDescription"
+        android:autofillHints="emailAddress" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/social_link"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2"
+        android:textColor="@color/grey"
+        app:layout_constraintTop_toBottomOf="@+id/socialLinkEdit"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
