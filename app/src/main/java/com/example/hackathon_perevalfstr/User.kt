@@ -1,7 +1,5 @@
 package com.example.hackathon_perevalfstr
 
-import android.text.InputType
-
 data class User(
     val lastName: String,
     val firstName: String,

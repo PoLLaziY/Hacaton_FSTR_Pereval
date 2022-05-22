@@ -3,8 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:id="@+id/fragmentRoot"
     android:layout_height="match_parent"
-    tools:context=".PerevalListFragment">
+    tools:context=".view.fragments.PerevalListFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/appBar"
@@ -14,6 +15,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
+            android:id="@+id/appBarTextView"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:ellipsize="end"
@@ -35,6 +37,7 @@
             app:layout_constraintBottom_toBottomOf="parent" />
 
         <ImageButton
+            android:id="@+id/logoutButton"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:backgroundTint="@color/transparent"
@@ -67,6 +70,7 @@
         android:layout_height="wrap_content"
         android:backgroundTint="@color/blue"
         android:src="@drawable/plus"
+        android:id="@+id/addPerevalButton"
         app:layout_constraintBottom_toTopOf="@+id/bottomNavigationBar"
         app:layout_constraintEnd_toEndOf="@+id/bottomNavigationBar"
         app:layout_constraintStart_toStartOf="@+id/bottomNavigationBar"
